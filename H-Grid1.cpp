@@ -61,16 +61,6 @@ ll power(ll n, ll k, ll m) {
     }
     return ans;
 }
-stack<ll> order;
-void dfs(ll v, VL adj[], vector<bool>& vis) {
-    vis[v] = 1;
-    for (auto w : adj[v]) {
-        if (!vis[w]) {
-            dfs(w, adj, vis);
-        }
-    }
-    order.push(v);
-}
 
 void solver() {
     ll n, m; cin >> n >> m;
