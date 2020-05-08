@@ -68,18 +68,21 @@ void solver() {
 	VL a(n + 1, -1);
 	forn1(i, n + 1)cin >> a[i];
 	ll dp[n + 1][k + 1]; // dp[i][j] - no of ways to distribute exactly j candies between i children
+	// Always think like this in counting problem (To calculate atmost K just a summation would be enough.)
 	forn(i, n + 1) {
 		forn(j, k + 1)dp[i][j] = 0;
 	}
 	ll ans = 0;
 	dp[0][0] = 1;
+
+	// O(N*K*K) == TLE   :(
+
 	forn1(i, n + 1) {
 		forn(j, k + 1) {
 			if (j == 0) {
 				dp[i][j] = 1;
 				continue;
 			}
-			dp[i][j] = 0;
 			forn(x, a[i] + 1) {
 				dp[i][j] += dp[i - 1][j - x];
 				dp[i][j] %= mod;
