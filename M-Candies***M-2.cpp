@@ -88,7 +88,8 @@ void solver() {
 
 	// Beautiful ---- :)
 
-	// Almost same kind of approach (optimization) is used to solve distribution of alike objects using DP. (Although there is a binomial formula.)
+	// Almost same kind of approach (optimization) is used to solve distribution of alike objects using DP. (Although 
+	// there is a binomial formula.)
 
 
 	forn1(i, n + 1) {
