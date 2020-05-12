@@ -1,4 +1,4 @@
-// same as LIS using BIT
+// same as LIS using BIT O(NlogN) ----> AC
 
 
 // fahadmd16(IIEST Shibpur)
