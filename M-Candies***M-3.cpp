@@ -1,4 +1,4 @@
-// STANDARD LIS O(N*N)
+// USING PREFIX SUM EASY TO SEE .
 
 
 // fahadmd16(IIEST Shibpur)
